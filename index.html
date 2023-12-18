@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href ="senators.css">
+    <link rel="icon" type="image/x-ico" href="images/favicon.ico">
+    <title>U.S Senators</title>
+</head>
+<body>
+    <header>
+    <div class = 'header'>
+        <h1>The United States Senate</h1>
+    </div>
+    <div class = 'list'>
+        <p>Democratic Seats <span id="DemocratCount"></span></p>
+        <p>Republican Seats <span id="RepublicanCount"></span></p>
+        <p>Independent Seats <span id="IndependentCount"></span></p>
+    </div>
+    </header>
+    
+    <div class="leadersection">
+        <div id="democratLeaders"><h2>Democratic Leaders</h2></div>
+        <div id="republicanLeaders"><h2>Republican Leaders</h2></div>
+        <h2>Independent Leaders</h2>
+        <div id="independentLeaders"></div>
+    </div> 
+
+    <div id="senatorTable">
+        <h2>List of U.S Senators</h2>
+            <select id="partyInput" onchange="filterFunction()">
+                <option value="">Party (Show All)</option>
+            </select>
+            <select id="stateInput" onchange="filterFunction()">
+                <option value="">State (Show All)</option>
+            </select>
+            <select id="rankInput" onchange="filterFunction()">
+                <option value="">Rank (Show All)</option>
+            </select>
+            <select id="genderInput" onchange="filterFunction()">
+                <option value="">Gender (Show All)</option>
+            </select>
+    </div>
+
+    <div class="tablecontainer">
+        <table id="AllsenatorTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Party</th>
+                    <th>State</th>
+                    <th>Rank</th>
+                    <th>Gender</th>
+                </tr>
+        </table>
+    </div>
+    <div id="errorHandle"></div>
+
+<script src="senators.js"></script>
+</body>
+</html>
+    

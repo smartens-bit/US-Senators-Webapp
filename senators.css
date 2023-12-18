@@ -1,0 +1,297 @@
+body{
+    margin: 0 0 0 0;
+    color: rgb(245, 245, 245);
+    font-family:'Times New Roman', Times, serif;
+    background-color: #041E42;
+    height: 100vh;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white-font);
+    padding: 20px 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: #041E42 ;
+    opacity: 0.9;
+}
+
+
+span {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large; 
+}
+
+.list {
+    position: relative;
+    background-image: url(images/capital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0.85;
+}
+
+.list p {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-evenly;
+    font-size: 35px;
+    padding: 0 100px 10px 100px;
+    color: white;
+}
+
+#DemocratCount {
+    font-size: 35px;
+    border-top: 3px solid rgb(245, 245, 245);
+    padding: 16px 0px;
+    text-align: center;
+}
+
+#RepublicanCount {
+    font-size: 35px;
+    border-top: 3px solid rgb(245, 245, 245);
+    padding: 16px 0px;
+    text-align: center;
+}
+
+#IndependentCount {
+    position: relative;
+    font-size: 35px;
+    border-top: 3px solid rgb(245, 245, 245);
+    padding: 16px 0px;
+    text-align: center;
+}
+
+.leadersection {
+    border: 2px solid white;
+    text-align: center;
+    font-size: 20px;
+    height: 100%;
+}
+
+.leadersection h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+#democratLeaders {
+    font-size: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}  
+
+#republicanLeaders {
+    font-size: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+#independentLeaders {
+    font-size: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#democratLeaders li {
+    list-style-type: none;
+}
+
+#republicanLeaders li {
+    list-style-type: none;
+}
+
+#independentLeaders li {
+    list-style-type: none;
+}
+
+#senatorList {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#senatorTable {
+    font-family: 'Glegoo', serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px; 
+    border-radius: 6px;
+}
+
+#AllsenatorTable {
+    font-family: 'Glegoo', serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: 18px; 
+    border-radius: 6px;
+}
+
+#AllsenatorTable th {
+    font-size: 20px;
+    padding: 10px;
+    align-self: center;
+    border-bottom: 3px solid rgb(245, 245, 245);
+}
+
+.tablecontainer {
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    font-size: 20px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    border-bottom: 1px solid  rgb(245, 245, 245);
+    background-color:  rgb(245, 245, 245);
+    color: #000;
+}
+ 
+#errorHandle {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    padding: 10px 20px 35px 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: #000;
+}
+  
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    .list p {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .tablecontainer {
+        display: flex;
+        justify-content: center;
+        border-collapse: collapse;
+        font-size: 15px;
+        align-self: center;
+        margin-bottom: 10px;
+        margin-left:4px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .list p {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    #senatorList, #senatorTable, #AllsenatorTable, .tablecontainer, #errorHandle, .popup, .close {
+        font-size: 16px;
+    }
+
+    #senatorTable th, #AllsenatorTable th {
+        font-size: 16px;
+    }
+
+    .tablecontainer {
+        display: flex;
+        justify-content: center;
+        border-collapse: collapse;
+        font-size: 12px;
+        align-self: center;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #senatorList, #senatorTable, #AllsenatorTable, .tablecontainer, #errorHandle, .popup, .close {
+        font-size: 16px;
+    }
+
+    .list p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #senatorTable th, #AllsenatorTable th {
+        font-size: 16px;
+    }
+
+    .popup {
+        width: 300px;
+        height: 200px;
+    }
+
+    .leadersection h2 {
+        font-family: 'Glegoo', serif;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #democratLeaders {
+        font-size: 15px;
+        padding-bottom: 20px;
+        align-items: center;
+    }  
+    
+    #republicanLeaders {
+        font-size: 15px;
+        padding-bottom: 20px;
+        align-items: center; 
+
+    }
+    
+    #independentLeaders {
+        font-size: 15px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+}
